@@ -1,0 +1,14 @@
+{
+  "name": "language-translation-app",
+  "version": "1.0.0",
+  "description": "Language translation app using Google Translate API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kelompok E",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.13"
+  }
+}
