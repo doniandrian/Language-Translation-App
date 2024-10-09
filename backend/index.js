@@ -6,20 +6,16 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Configure EJS and static folder for Tailwind CSS
-app.set('view engine', 'ejs');
-app.use(express.static('public'));
 
-// Middlewares to parse form data and JSON data
+
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.json());  // Add this line to parse JSON requests
+app.use(express.json());  
 
-// Main route to render form
+
 app.get('/', (req, res) => {
     res.render('index');
 });
 
-// Translation route
 app.post('/translate', async (req, res) => {
     const { text, sl, tl } = req.body;
 
@@ -45,7 +41,6 @@ app.post('/translate', async (req, res) => {
     }
 });
 
-// Start the server
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
 });
