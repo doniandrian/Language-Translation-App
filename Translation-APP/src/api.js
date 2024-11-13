@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from "axios";
 
 const apiKey = process.env.REACT_APP_GOOGLE_TRANSLATE_API_KEY;
 const baseURL = `https://translation.googleapis.com/language/translate/v2?key=${apiKey}`;
@@ -9,12 +9,12 @@ const fetchData = async (text, targetLanguage) => {
       params: {
         q: text,
         source: sourceLanguage,
-        target: targetLanguage
-      }
+        target: targetLanguage,
+      },
     });
     return response.data.data.translations[0].translatedText;
   } catch (error) {
-    console.error('Error fetching data:', error);
+    console.error("Error fetching data:", error);
     return null;
   }
 };
