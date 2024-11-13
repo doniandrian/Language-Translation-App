@@ -10,8 +10,8 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="w-screen justify-center flex flex-col">
-        <div className="top-0 z-0 h-full w-full bg-gradient-to-r from-blue-400 to-blue-800 absolute"></div>
+      <div className="w-[70vw] min-h-screen flex flex-col items-center  mx-auto relative">
+        <div className="top-0 z-0 h-full w-full"></div>
         <LanguageSelect langTo={langTo} langFrom={langFrom} />
         <Text text={""} translatedtext={""} />
       </div>
