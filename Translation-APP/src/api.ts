@@ -1,7 +1,7 @@
 import axios, { AxiosResponse } from "axios";
 
 const baseURL = "https://translation.googleapis.com/language/translate/v2";
-const apiKey = process.env.REACT_APP_GOOGLE_TRANSLATE_API_KEY;
+const apiKey = import.meta.env.VITE_API_KEY;
 
 const fetchData = async (
   text: string,
