@@ -1,0 +1,7 @@
+.background-image {
+    background-image: url('../public/bg-UNPAR.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+  }
+  

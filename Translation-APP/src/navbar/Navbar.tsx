@@ -2,7 +2,7 @@
 
 function Navbar() {
   return (
-    <nav className="w-screen bg-[#26577C] border-grey-200 z-20 relative">
+    <nav className="w-screen bg-[#26577C] border-grey-200 z-20 sticky">
       <div className="flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <span className="self-center md:text-2xl sm:text-xl font-semibold whitespace-nowrap dark:text-white">
