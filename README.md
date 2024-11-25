@@ -7,8 +7,8 @@
 
 # Development Setup
 
-1. Memilih direktori untuk menyimpan repositori ini
-2. Clone repository ini
+1. Select a directory to save this repository
+2. Clone the repository
    ```sh
    git clone https://github.com/doniandrian/Language-Translation-App.git
    ```
@@ -17,7 +17,7 @@
    ```sh
    npm install
    ```
-5. Jalankan Aplikasi 
+5. Run app 
    ```sh
    npm run dev
    ```
